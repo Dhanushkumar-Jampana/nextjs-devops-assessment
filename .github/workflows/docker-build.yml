@@ -29,10 +29,12 @@ jobs:
 
       - name: Push Docker image
         run: |
-          IMAGE_NAME=ghcr.io/dhanushkumar-jampana/nextjs-devops-assessment/my-nextjs-app
-          IMAGE_TAG=$(echo $GITHUB_SHA | cut -c1-7)
-          docker push $IMAGE_NAME:latest
-          docker push $IMAGE_NAME:$IMAGE_TAG
+          IMAGE_NAME=ghcr.io/dhanushkumar-jampana/my-nextjs-app
+docker build -t $IMAGE_NAME:latest .
+docker tag $IMAGE_NAME:latest $IMAGE_NAME:$IMAGE_TAG
+docker push $IMAGE_NAME:latest
+docker push $IMAGE_NAME:$IMAGE_TAG
+
 
 
 
