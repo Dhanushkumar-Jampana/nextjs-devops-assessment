@@ -119,6 +119,7 @@ my-nextjs-app/
 
 RESULTS:
 - Docker Image
+
 <img width="747" height="448" alt="Screenshot 2025-10-07 011705" src="https://github.com/user-attachments/assets/5540cdbe-bda5-4819-b22e-4e865402056a" />
 
 
