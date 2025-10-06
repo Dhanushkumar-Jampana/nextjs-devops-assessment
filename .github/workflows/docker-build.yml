@@ -1,4 +1,4 @@
-name: Build and Push Docker name: Build and Push Docker Image
+name: Build and Push Docker Image
 
 on:
   push:
@@ -33,4 +33,11 @@ jobs:
           IMAGE_TAG=$(echo $GITHUB_SHA | cut -c1-7)
           docker push $IMAGE_NAME:latest
           docker push $IMAGE_NAME:$IMAGE_TAG
+
+
+
+
+
+
+
 
